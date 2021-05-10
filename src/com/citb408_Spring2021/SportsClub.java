@@ -25,4 +25,13 @@ public abstract class SportsClub {
     public SportsClub biggerClub(SportsClub sportsClub) {
         return this.income() >sportsClub.income() ? this:sportsClub ;
     }
+
+    @Override
+    public String toString() {
+        return "SportsClub{" +
+                "name='" + name + '\'' +
+                ", peyRent=" + peyRent +
+                ", salary=" + salary +
+                '}';
+    }
 }

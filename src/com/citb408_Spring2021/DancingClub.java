@@ -40,4 +40,12 @@ public class DancingClub extends SportsClub {
     public DancingClub biggesClub(DancingClub club){
         return this.profit()>club.profit()?this:club;
     }
+
+    @Override
+    public String toString() {
+        return "DancingClub{" +
+                "dancerPey=" + dancerPey +
+                ", dancersList=" + dancersList +
+                "} " + super.toString();
+    }
 }

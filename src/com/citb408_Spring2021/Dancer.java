@@ -48,4 +48,13 @@ public class Dancer {
     public Dancer isBiggerDancer(Dancer dancer ){
        return this.registerDate.isBefore(dancer.registerDate)?this:dancer;
     }
+
+    @Override
+    public String toString() {
+        return "Dancer{" +
+                "name='" + name + '\'' +
+                ", registerDate=" + registerDate +
+                ", stile=" + stile +
+                '}';
+    }
 }

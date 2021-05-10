@@ -12,12 +12,12 @@ public class Main {
         Dancer dancer3 = new Dancer("Mona", LocalDate.of(1997, 12, 1), Stile.BALLET);
         Dancer dancer4 = new Dancer("Kona", LocalDate.of(1977, 12, 24), Stile.BALLET);
 
-        dancer.setYearOfЕxperience(2);
+        Dancer.setYearOfЕxperience(2);
         System.out.println(Dancer.getYearOfЕxperience());
-        dancer.incrementExperience(1);
+        Dancer.incrementExperience(1);
         System.out.println(Dancer.getYearOfЕxperience());
 
-        System.out.println("Is " + dancer + "experienced" + dancer.isExpert());
+        System.out.println("Is " + dancer + " experienced " + dancer.isExpert());
         System.out.println("Who is more experienced? " + dancer.isBiggerDancer(dancer1));
         SportsClub sportsClub1 = new DancingClub("Dancing Club 1", 3000, 6000, 100);
         System.out.println("The costs of " + sportsClub1 + " is " + sportsClub1.costs());
